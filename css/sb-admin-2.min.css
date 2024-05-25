@@ -16,7 +16,7 @@
     margin: 0 auto; /* Menetapkan margin otomatis untuk posisi tengah */
     padding: 5px 5px;
     padding-left: 10px;
-    color: #ffffff;
+    color: #f7f7f7;
     border-radius: 15px;
     font-size: 12px;
     text-align: left;
@@ -35,6 +35,22 @@
     border-radius: 5px;
     font-size: 12px;
     text-align: center;
+    cursor: default; /* Ensures the cursor does not change to a pointer */
+    user-select: none; /* Prevents text selection */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow for depth */
+}
+
+.button-point {
+    display: block; /* Mengubah display menjadi block agar margin auto bekerja */
+    /* width: 120px; /* Lebar tetap 200 piksel */
+    margin: 0 auto; /* Menetapkan margin otomatis untuk posisi tengah */
+    padding-top: 5px;
+    padding-bottom: 3px;
+    background: linear-gradient(180deg, #ffffff, #d4d3d3,);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
     cursor: default; /* Ensures the cursor does not change to a pointer */
     user-select: none; /* Prevents text selection */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow for depth */
@@ -5092,7 +5108,7 @@ input[type=submit].btn-block {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     background-color: #f8f9fc;
-    border-bottom: 1px solid #e3e6f0
+    border-bottom: 0px solid #e3e6f0
 }
 
 .card-header:first-child {
@@ -11171,6 +11187,12 @@ a:focus {
     background-size: cover
 }
 
+.bg-gradient-light-180 {
+    background-color: #f8f9fc;
+    background-image: linear-gradient(180deg, #c2cbe5 10%, #f8f9fc 100%);
+    background-size: cover
+}
+
 .bg-gradient-dark {
     background-color: #5a5c69;
     background-image: linear-gradient(180deg, #5a5c69 10%, #373840 100%);
@@ -11276,6 +11298,18 @@ a:focus {
 
 .border-bottom-primary {
     border-bottom: .25rem solid #4e73df !important
+}
+
+.border-top-primary {
+    border-top: .5rem solid #4e73df !important
+}
+
+.border-top-warning {
+    border-top: .5rem solid #f6c23e !important
+}
+
+.border-top-dark {
+    border-top: .5rem solid #5a5c69 !important
 }
 
 .border-left-secondary {
